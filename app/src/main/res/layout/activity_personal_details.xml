@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDetails">
+
+    <TextView
+        android:id="@+id/Tv_Blank_Header_3_1"
+        android:layout_width="420dp"
+        android:layout_height="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#36413E"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ImBt_Arrow_Back_3_1"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tv_Blank_Header_3_1"
+        app:layout_constraintStart_toStartOf="@+id/Tv_Blank_Header_3_1"
+        app:layout_constraintTop_toTopOf="@+id/Tv_Blank_Header_3_1"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/Tv_Heading_3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Details"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tv_Blank_Header_3_1"
+        app:layout_constraintStart_toEndOf="@+id/ImBt_Arrow_Back_3_1"
+        app:layout_constraintTop_toTopOf="@+id/Tv_Blank_Header_3_1" />
+
+    <TextView
+        android:id="@+id/Tv_Copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Copyright Project Dayak © 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPersonalName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Fullname"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="24sp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Blank_Header_3_1" />
+
+    <EditText
+        android:id="@+id/etPersonalAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonalName" />
+
+    <EditText
+        android:id="@+id/etPersonalBloodType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Blood Type (Eg: AB+, O-, B+...)"
+        android:inputType="textPersonName|text|textCapWords"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonalAge" />
+
+    <EditText
+        android:id="@+id/etPersonalIC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="IC No. (Eg: 123456-12-1234)"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonalBloodType" />
+
+    <Button
+        android:id="@+id/Bt_AddInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="Save Info"
+        app:backgroundTint="#E81313"
+        app:layout_constraintEnd_toStartOf="@+id/Bt_LoadInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonalIC" />
+
+    <Button
+        android:id="@+id/Bt_LoadInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        app:iconTint="#0F16A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonalIC" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

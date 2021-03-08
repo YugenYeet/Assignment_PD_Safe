@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDoLists">
+
+    <TextView
+        android:id="@+id/Tv_Blank_Header_1_1"
+        android:layout_width="420dp"
+        android:layout_height="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#36413E"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ImBt_Arrow_Back_1_1"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="launch_EmergencyC_pg"
+        app:layout_constraintBottom_toBottomOf="@+id/Tv_Blank_Header_1_1"
+        app:layout_constraintStart_toStartOf="@+id/Tv_Blank_Header_1_1"
+        app:layout_constraintTop_toTopOf="@+id/Tv_Blank_Header_1_1"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/Tv_Heading_1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="To Do Lists"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Tv_Blank_Header_1_1"
+        app:layout_constraintStart_toEndOf="@+id/ImBt_Arrow_Back_1_1"
+        app:layout_constraintTop_toTopOf="@+id/Tv_Blank_Header_1_1" />
+
+    <TextView
+        android:id="@+id/Tv_Copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Copyright Project Dayak © 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPersonalToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Blank_Header_1_1"
+        tools:itemCount="5"
+        tools:listitem="3" />
+
+    <EditText
+        android:id="@+id/etPersonalList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter To Do"
+        android:inputType="textShortMessage|textLongMessage|textAutoCorrect|textPersonName|textAutoComplete"
+        app:layout_constraintEnd_toStartOf="@+id/addPersonalListbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvPersonalToDo" />
+
+    <Button
+        android:id="@+id/addPersonalListbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to List"
+        app:backgroundTint="#ED1B2E"
+        app:layout_constraintEnd_toStartOf="@+id/delPersonalToDobtn"
+        app:layout_constraintTop_toBottomOf="@+id/rvPersonalToDo" />
+
+    <Button
+        android:id="@+id/delPersonalToDobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:backgroundTint="#D38B1B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvPersonalToDo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

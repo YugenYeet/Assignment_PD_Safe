@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospitalHotline_WestMY">
+
+    <TextView
+        android:id="@+id/Tv_Blank_Header_1_2"
+        android:layout_width="420dp"
+        android:layout_height="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#36413E"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ImBt_Arrow_Back_1_2"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tv_Blank_Header_1_2"
+        app:layout_constraintStart_toStartOf="@+id/Tv_Blank_Header_1_2"
+        app:layout_constraintTop_toTopOf="@+id/Tv_Blank_Header_1_2"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/Tv_Heading_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital Hotlines (West MY)"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Tv_Blank_Header_1_2"
+        app:layout_constraintStart_toEndOf="@+id/ImBt_Arrow_Back_1_2"
+        app:layout_constraintTop_toTopOf="@+id/Tv_Blank_Header_1_2" />
+
+    <TextView
+        android:id="@+id/Tv_Copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Copyright Project Dayak © 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Perlis"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Perlis: Hospital Tuanku Fauziah : 04-9738000"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Blank_Header_1_2" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Kedah"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Kedah: Hospital Sultanah Bahiyah : 04-7406233"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Perlis" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Penang"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Penang: Hospital Pulau Pinang : 04-2225333"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Kedah" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Perak"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Perak: Hospital Raja Permaisuri Bainun : 05-2085000"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Penang" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Kelantan"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Kelantan: Hospital Raja Perempuan Zainab II : 09-7452000"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Perak" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Terengganu"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Terengganu: Hospital Sultanah Nur Zahirah : 09-6212121"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Kelantan" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Pahang"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Pahang: Hospital Tengku Ampuan Afzan : 09-5133333"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Terengganu" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Selangor"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Selangor: Hospital Sungai Buloh : 03-61454333"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Pahang" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_KualaLumpur"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="WP Kuala Lumpur: Hospital Kuala Lumpur : 03-26155555"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Selangor" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_NegeriS"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Negeri Sembilan: Hospital Tuanku Ja‘afar : 06-7684000"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_KualaLumpur" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Malacca"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Malacca: Hospital Melaka : 06-2892344"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_NegeriS" />
+
+    <TextView
+        android:id="@+id/Tv_HospitalH_Johor"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAE8E8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Johor: Hospital Sultanah Aminah : 07-2257000"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_HospitalH_Malacca" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
